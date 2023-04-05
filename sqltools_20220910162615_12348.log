@@ -1,0 +1,27 @@
+22-09-10 16:26:17.3603421 pid:12348 tid:1 sqltools Critical: 0 : An unhandled exception occurred: System.Resources.MissingManifestResourceException: A case-insensitive lookup for resource file "Microsoft.SqlTools.ServiceLayer.Localization.SR.resources" in assembly "MicrosoftSqlToolsServiceLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" found multiple entries. Remove the duplicates or specify the exact case.
+   at System.Resources.ManifestBasedResourceGroveler.CaseInsensitiveManifestResourceStreamLookup(Assembly satellite, String name)
+   at System.Resources.ManifestBasedResourceGroveler.GrovelForResourceSet(CultureInfo culture, Dictionary`2 localResourceSets, Boolean tryParents, Boolean createIfNotExists)
+   at System.Resources.ResourceManager.InternalGetResourceSet(CultureInfo culture, Boolean createIfNotExists, Boolean tryParents)
+   at System.Resources.ResourceManager.GetString(String name, CultureInfo culture)
+   at Microsoft.SqlTools.ServiceLayer.SR.Keys.GetString(String key) in D:\a\_work\1\s\src\Microsoft.SqlTools.ServiceLayer\Localization\sr.cs:line 13582
+   at Microsoft.SqlTools.ServiceLayer.ObjectExplorer.SmoModel.NodePathGenerator.Node.Label() in D:\a\_work\1\s\src\Microsoft.SqlTools.ServiceLayer\ObjectExplorer\SmoModel\NodePathGenerator.cs:line 242
+   at Microsoft.SqlTools.ServiceLayer.ObjectExplorer.SmoModel.NodePathGenerator.Initialize() in D:\a\_work\1\s\src\Microsoft.SqlTools.ServiceLayer\ObjectExplorer\SmoModel\NodePathGenerator.cs:line 38
+   at Microsoft.SqlTools.ServiceLayer.ObjectExplorer.ObjectExplorerService..ctor() in D:\a\_work\1\s\src\Microsoft.SqlTools.ServiceLayer\ObjectExplorer\ObjectExplorerService.cs:line 62
+   at lambda_method134(Closure , LifetimeContext , CompositionOperation )
+   at System.Composition.TypedParts.ActivationFeatures.DisposalFeature.<>c__DisplayClass0_0.<RewriteActivator>b__0(LifetimeContext c, CompositionOperation o)
+   at System.Composition.Hosting.Providers.ImportMany.ImportManyExportDescriptorProvider.<>c__DisplayClass3_2`1.<GetImportManyDescriptor>b__4(ExportDescriptor e)
+   at System.Linq.Enumerable.SelectArrayIterator`2.ToArray()
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at System.Composition.Hosting.Providers.ImportMany.ImportManyExportDescriptorProvider.<>c__DisplayClass3_1`1.<GetImportManyDescriptor>b__3(LifetimeContext c, CompositionOperation o)
+   at System.Composition.Hosting.Core.CompositionOperation.Run(LifetimeContext outermostLifetimeContext, CompositeActivator compositionRootActivator)
+   at System.Composition.Hosting.Core.LifetimeContext.TryGetExport(CompositionContract contract, Object& export)
+   at System.Composition.Hosting.CompositionHost.TryGetExport(CompositionContract contract, Object& export)
+   at System.Composition.CompositionContext.GetExport(CompositionContract contract)
+   at System.Composition.CompositionContext.GetExports(Type exportType, String contractName)
+   at System.Composition.CompositionContext.GetExports(Type exportType)
+   at Microsoft.SqlTools.Extensibility.ExtensionStore.GetExports[T]() in D:\a\_work\1\s\src\Microsoft.SqlTools.Hosting\Extensibility\ExtensionServiceProvider.cs:line 190
+   at Microsoft.SqlTools.Extensibility.ExtensionServiceProvider.<>c__DisplayClass8_0`1.<EnsureExtensionStoreRegistered>b__0() in D:\a\_work\1\s\src\Microsoft.SqlTools.Hosting\Extensibility\ExtensionServiceProvider.cs:line 115
+   at Microsoft.SqlTools.Extensibility.RegisteredServiceProvider.<>c__DisplayClass4_0`1.<Register>b__0() in D:\a\_work\1\s\src\Microsoft.SqlTools.Hosting\Extensibility\RegisteredServiceProvider.cs:line 73
+   at Microsoft.SqlTools.Extensibility.RegisteredServiceProvider.GetServicesImpl[T]() in D:\a\_work\1\s\src\Microsoft.SqlTools.Hosting\Extensibility\RegisteredServiceProvider.cs:line 105
+   at Microsoft.SqlTools.Extensibility.ExtensionServiceProvider.GetServicesImpl[T]() in D:\a\_work\1\s\src\Microsoft.SqlTools.Hosting\Extensibility\ExtensionServiceProvider.cs:line 107
+   at Microsoft.SqlTools.Extensibility.ServiceProviderBase.GetServices[T]() in D:\a\_work

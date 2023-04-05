@@ -1,0 +1,30 @@
+.drawerProducts {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 14px 0 rgb(145, 144, 144);
+  padding: 5px 15px;
+  flex:1
+}
+
+.drawerProducts .cardActions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+.drawerProducts .cardActions .cardActionButton {
+  width: 30px;
+  height: 30px;
+  border: 1px solid lightgrey;
+  border-radius: 50%;
+  border: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
